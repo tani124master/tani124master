@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380">
+  <defs>
+    <style>
+      .bp-line { stroke: #cfe0ef; stroke-width: 1.3; fill: none; }
+      .bp-line-thin { stroke: #8fb3d1; stroke-width: 0.7; fill: none; }
+      .bp-dash { stroke: #6f93b4; stroke-width: 0.7; fill: none; stroke-dasharray: 3 3; }
+      .bp-text { font-family: 'Courier New', monospace; fill: #dce9f5; }
+      .bp-label { font-family: 'Courier New', monospace; fill: #7fa3c4; font-size: 11px; letter-spacing: 1px; }
+      .bp-num { font-family: 'Courier New', monospace; fill: #7fa3c4; font-size: 10px; }
+      .node { fill: #0c2340; stroke: #cfe0ef; stroke-width: 1.2; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="380" fill="#0c2340"/>
+  <rect x="12" y="12" width="1176" height="356" fill="none" stroke="#3a5a7a" stroke-width="1.5"/>
+  <rect x="18" y="18" width="1164" height="344" fill="none" stroke="#3a5a7a" stroke-width="0.6"/>
+
+  <text x="600" y="52" text-anchor="middle" class="bp-text" font-size="26" letter-spacing="5" font-weight="bold">POST-QUANTUM LATTICE CIPHER</text>
+  <text x="600" y="72" text-anchor="middle" class="bp-label" font-size="12">MODULE No. ZTR-2026 &#183; LATTICE-BASED KEY ENCAPSULATION</text>
+  <line x1="60" y1="86" x2="1140" y2="86" class="bp-line-thin"/>
+
+  <!-- lattice grid of nodes and connecting edges -->
+  <g transform="translate(150,110)">
+    <!-- grid nodes 6x4 -->
+    <!-- generate manually -->
+    <g class="bp-line-thin">
+      <line x1="0" y1="0" x2="600" y2="0"/>
+      <line x1="0" y1="60" x2="600" y2="60"/>
+      <line x1="0" y1="120" x2="600" y2="120"/>
+      <line x1="0" y1="180" x2="600" y2="180"/>
+      <line x1="0" y1="0" x2="0" y2="180"/>
+      <line x1="120" y1="0" x2="120" y2="180"/>
+      <line x1="240" y1="0" x2="240" y2="180"/>
+      <line x1="360" y1="0" x2="360" y2="180"/>
+      <line x1="480" y1="0" x2="480" y2="180"/>
+      <line x1="600" y1="0" x2="600" y2="180"/>
+    </g>
+    <!-- diagonal key-path highlighted -->
+    <polyline points="0,180 120,120 240,120 360,60 480,60 600,0" class="bp-line"/>
+    <!-- nodes -->
+    <circle cx="0" cy="180" r="7" class="node"/>
+    <circle cx="120" cy="120" r="7" class="node"/>
+    <circle cx="240" cy="120" r="7" class="node"/>
+    <circle cx="360" cy="60" r="7" class="node"/>
+    <circle cx="480" cy="60" r="7" class="node"/>
+    <circle cx="600" cy="0" r="7" class="node"/>
+
+    <text x="-10" y="205" class="bp-num">A0</text>
+    <text x="110" y="145" class="bp-num">A1</text>
+    <text x="230" y="145" class="bp-num">A2</text>
+    <text x="350" y="45" class="bp-num">A3</text>
+    <text x="470" y="45" class="bp-num">A4</text>
+    <text x="605" y="-8" class="bp-num">PK</text>
+  </g>
+
+  <line x1="60" y1="325" x2="1140" y2="325" class="bp-line-thin"/>
+  <text x="60" y="348" class="bp-label" font-size="11">INVENTOR / MAINTAINER</text>
+  <text x="60" y="368" class="bp-text" font-size="16" letter-spacing="1">TANISHQ BANSAL</text>
+  <text x="1140" y="348" text-anchor="end" class="bp-label" font-size="11">GITHUB</text>
+  <text x="1140" y="368" text-anchor="end" class="bp-text" font-size="16" letter-spacing="1">@tani124master</text>
+</svg>

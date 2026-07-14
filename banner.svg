@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+  <defs>
+    <style>
+      .bp-line { stroke: #cfe0ef; stroke-width: 1.4; fill: none; }
+      .bp-line-thin { stroke: #8fb3d1; stroke-width: 0.8; fill: none; }
+      .bp-dash { stroke: #8fb3d1; stroke-width: 1; fill: none; stroke-dasharray: 4 3; }
+      .bp-text { font-family: 'Courier New', monospace; fill: #dce9f5; }
+      .bp-label { font-family: 'Courier New', monospace; fill: #7fa3c4; font-size: 11px; letter-spacing: 1px; }
+      .bp-num { font-family: 'Courier New', monospace; fill: #7fa3c4; font-size: 9px; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="340" fill="#0c2340"/>
+  <rect x="12" y="12" width="1176" height="316" fill="none" stroke="#3a5a7a" stroke-width="1.5"/>
+  <rect x="18" y="18" width="1164" height="304" fill="none" stroke="#3a5a7a" stroke-width="0.6"/>
+
+  <!-- header -->
+  <text x="600" y="52" text-anchor="middle" class="bp-text" font-size="30" letter-spacing="6" font-weight="bold">ENGINEERING PORTFOLIO</text>
+  <text x="600" y="74" text-anchor="middle" class="bp-label" font-size="12">DRONE SYSTEMS &#183; BIOMEDICAL DEVICES &#183; CRYPTOGRAPHIC INFRASTRUCTURE</text>
+  <line x1="60" y1="88" x2="1140" y2="88" class="bp-line-thin"/>
+
+  <!-- === Panel 1: Drone / quadcopter schematic === -->
+  <g transform="translate(90,120)">
+    <circle cx="60" cy="60" r="6" class="bp-line"/>
+    <line x1="60" y1="60" x2="10" y2="15" class="bp-line"/>
+    <line x1="60" y1="60" x2="110" y2="15" class="bp-line"/>
+    <line x1="60" y1="60" x2="10" y2="105" class="bp-line"/>
+    <line x1="60" y1="60" x2="110" y2="105" class="bp-line"/>
+    <circle cx="10" cy="15" r="14" class="bp-line-thin"/>
+    <circle cx="110" cy="15" r="14" class="bp-line-thin"/>
+    <circle cx="10" cy="105" r="14" class="bp-line-thin"/>
+    <circle cx="110" cy="105" r="14" class="bp-line-thin"/>
+    <line x1="0" y1="15" x2="20" y2="15" class="bp-line-thin"/>
+    <line x1="100" y1="15" x2="120" y2="15" class="bp-line-thin"/>
+    <line x1="0" y1="105" x2="20" y2="105" class="bp-line-thin"/>
+    <line x1="100" y1="105" x2="120" y2="105" class="bp-line-thin"/>
+    <text x="60" y="150" text-anchor="middle" class="bp-num">FIG. 1 — AUTONOMOUS FLIGHT</text>
+  </g>
+
+  <!-- === Panel 2: PCB / chip (compute) === -->
+  <g transform="translate(340,125)">
+    <rect x="20" y="20" width="80" height="80" class="bp-line"/>
+    <rect x="40" y="40" width="40" height="40" class="bp-line-thin"/>
+    <line x1="0" y1="35" x2="20" y2="35" class="bp-line-thin"/>
+    <line x1="0" y1="55" x2="20" y2="55" class="bp-line-thin"/>
+    <line x1="0" y1="75" x2="20" y2="75" class="bp-line-thin"/>
+    <line x1="100" y1="35" x2="120" y2="35" class="bp-line-thin"/>
+    <line x1="100" y1="55" x2="120" y2="55" class="bp-line-thin"/>
+    <line x1="100" y1="75" x2="120" y2="75" class="bp-line-thin"/>
+    <line x1="35" y1="0" x2="35" y2="20" class="bp-line-thin"/>
+    <line x1="60" y1="0" x2="60" y2="20" class="bp-line-thin"/>
+    <line x1="85" y1="0" x2="85" y2="20" class="bp-line-thin"/>
+    <line x1="35" y1="100" x2="35" y2="120" class="bp-line-thin"/>
+    <line x1="60" y1="100" x2="60" y2="120" class="bp-line-thin"/>
+    <line x1="85" y1="100" x2="85" y2="120" class="bp-line-thin"/>
+    <text x="60" y="150" text-anchor="middle" class="bp-num">FIG. 2 — INFERENCE PIPELINE</text>
+  </g>
+
+  <!-- === Panel 3: Biomedical (heart + pulse) === -->
+  <g transform="translate(590,125)">
+    <path d="M60,95 C20,65 5,40 25,22 C40,8 60,20 60,35 C60,20 80,8 95,22 C115,40 100,65 60,95 Z" class="bp-line"/>
+    <polyline points="0,55 25,55 35,35 45,75 55,45 60,55 120,55" class="bp-line-thin"/>
+    <text x="60" y="150" text-anchor="middle" class="bp-num">FIG. 3 — BIOARTIFICIAL ORGAN</text>
+  </g>
+
+  <!-- === Panel 4: Cryptography (lock / lattice) === -->
+  <g transform="translate(840,120)">
+    <rect x="25" y="45" width="50" height="42" rx="4" class="bp-line"/>
+    <path d="M35,45 V30 a15,15 0 0 1 30,0 V45" class="bp-line-thin"/>
+    <circle cx="50" cy="65" r="5" class="bp-line-thin"/>
+    <line x1="50" y1="70" x2="50" y2="80" class="bp-line-thin"/>
+    <g class="bp-dash">
+      <line x1="0" y1="10" x2="120" y2="10"/>
+      <line x1="0" y1="10" x2="0" y2="105"/>
+      <line x1="120" y1="10" x2="120" y2="105"/>
+      <line x1="0" y1="105" x2="120" y2="105"/>
+    </g>
+    <text x="60" y="150" text-anchor="middle" class="bp-num">FIG. 4 — POST-QUANTUM CRYPTO</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="60" y1="260" x2="1140" y2="260" class="bp-line-thin"/>
+  <text x="60" y="285" class="bp-label" font-size="11">INVENTOR / MAINTAINER</text>
+  <text x="60" y="305" class="bp-text" font-size="16" letter-spacing="1">TANISHQ BANSAL</text>
+  <text x="1140" y="285" text-anchor="end" class="bp-label" font-size="11">GITHUB</text>
+  <text x="1140" y="305" text-anchor="end" class="bp-text" font-size="16" letter-spacing="1">@tani124master</text>
+</svg>
