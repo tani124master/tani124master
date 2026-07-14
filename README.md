@@ -6,3 +6,4 @@
       src="https://raw.githubusercontent.com/tani124master/tani124master/main/light_mode.svg">
   </picture>
 </a>
+<img src="https://raw.githubusercontent.com/tani124master/YOUR-REPO/main/photo.svg">
